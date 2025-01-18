@@ -1,13 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22d4fd;
+}
+
 *{
     margin: 0;
     padding: 0;
 }
+.cabeçalho {
+    padding: 2% 0 0 15%;;
+}
+
+.cabeçalho__menu {
+    display: flex;
+    gap: 80px;
+
+}
+
+.cabeçalho__menu__link:hover{
+    color: wheat;
+
+}
+.cabeçalho__menu__link.active {
+color: #272727;
+    font-weight: bold;
+}
+
+ 
+.cabeçalho__menu__link {
+    text-decoration: none;  /** retira o sublinhado do link**/
+    color: #22d4fd;  /** determina a cor do texto somente da classe**/
+    font-family: "Montserrat", serif; /** determina a fonte da classe( neste caso importei a fonte do google fonts)**/
+    font-weight: 600; 
+    font-size: 26px; /** tamanho da fonte**/
+    
+}
+.Paragrafo__sobremim {
+text-align: justify;
+font-family: "Montserrat", sans-serif;
+font-size: 16px;
+}
+.Paragrafo {
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    color: #22d4fd;
+}
+
 body {
-    height: 100vh;
-    box-sizing: border-box;
-    background: black;
-    color: white;
+    /** height: auto; altura do corpo da pagina **/
+    box-sizing: border-box; /** dimensionamento da caixa ou elemento**/
+    background: black;  /** significa fundo da tela, pode ser usado background color tbm**/
+    color: white; /**cor da letra escolhida**/
 }
 .titulo-destaque {
     color: aqua;
@@ -18,47 +63,94 @@ span {
 
 
 h1{
-    font-weight: bold;
+    font-weight: bold; /** peso da fonte (bold) negrito)**/
 }
 .apresentação {
-    margin: 10% 10%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 8% 15%;
+    display: flex; /** display=mostrar**/
+    align-items: center; /** alinhar itens**/
+    justify-content: space-between; /** justificar o conteudo(space between)= espaço entre**/
     
 }
 img {
     margin: 20px;
+
     
 }
 .apresentação__conteudo {
-    width: 615px;
+    width: 50%; /** largura**/
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /** direção flexivel**/
     gap: 40px;
+
 }
 .aprentenção__conteudo__titulo {
-font-size: 36px;
+font-size: 2.25rem;
 font-family: 'Krona one', serif;
+
 
 }
 .apresentação__conteudo__paragrafo {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: "Montserrat", serif;
 }
 .apresentação__links {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
-.apresentação__links__link {
-    background-color: #22d4fd;
-    width: 280px;
+.apresentação__links__navegação {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 350px;
     text-align: center;
-    border-radius: 16px;
-    font-weight: 600px;
-    font-size: 24px;
+    align-items: center;
+    border-radius: 8px; /** raio da borda ou largura da borda**/
+    font-size: 1.5rem;
+    font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none;
-    color: black;
+    color:white;
     font-family: "Montserrat", serif;
+    border: 2px solid #22d4fd;
 }
+
+
+.apresentação__links__navegação:hover {
+    background-color: #272727;
+} /** efeito de mudar o fundo ao passar o mouse**/
+
+.apresentação__imagem {
+    width: 50%;
+}
+
+.rodapé {
+color: black;
+background-color: #22d4fd;
+padding: 24px;
+text-align: center;
+font-family: "Montserrat", serif;
+font-size: 1.5rem;
+font-weight: 400;
+
+}
+@media (max-width: 1200px){
+    .cabeçalho {
+        padding: 10%;
+    }
+    .cabeçalho__menu {
+        justify-content: center;
+    }
+
+    .apresentação {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentação__conteudo {
+        width: auto;
+
+    }
+} /**parenteses significa condições, como um verdadeiro ou falso**/

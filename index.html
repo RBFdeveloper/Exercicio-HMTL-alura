@@ -1,27 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
+<head> <!--head= cabeça-->
+    <meta charset="UTF-8"> <!--meta informação-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Portifolio Ramon</title>
+    <title>Portifolio Ramon</title> <!--titulo-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header></header>
-    <main class="apresentação">
-<section class="apresentação__conteudo">
-        <h1 class="aprentenção__conteudo__titulo">Eleve seu negócio digital a outro nível <strong class="titulo-destaque">com um Front-end de qualidade!</strong></h1>
-        <p class="apresentação__conteudo__paragrafo">Olá! Sou Ramon Ferreira, <span>Desenvolvedor Front-end</span>. Ajudo você a realizar seus objetivos. Vamos conversar?</p>
+    <header class="cabeçalho"> <!--header=cabeçalho-->
+        <nav class="cabeçalho__menu">
+            <a class="cabeçalho__menu__link active" href="index.html">Página Inicial</a> <!--tag a significa ancora-->
+            <a class="cabeçalho__menu__link" href="sobremim.html">Sobre Mim</a> <!--href= referência-->
+            <a class="cabeçalho__menu__link" href="curriculo.html">Currículo</a>
+        </nav>
+    </header>
 
-    <div class="apresentação__links">
-        <a class="apresentação__links__link" href="https://www.linkedin.com">Linkedin</a>
-        <a class="apresentação__links__link" href="https://github.com/RBFdeveloper">Github</a>
+    <main class="apresentação"> <!--main=principal-->
+
+        <section class="apresentação__conteudo"><!--section= secção e class= classe muito usado para estilizar somente a classe denominada-->
+            <h1 class="aprentenção__conteudo__titulo">Eleve seu negócio digital a outro nível <strong class="titulo-destaque">com um Front-end de qualidade!</strong></h1>
+            <p class="apresentação__conteudo__paragrafo">Olá! Sou Ramon Ferreira, <span>Desenvolvedor Front-end</span>. Ajudo você a realizar seus objetivos. Vamos conversar?</p>
+        <div class="apresentação__links">
+
+            <h2>Acesse Minhas Redes:</h2>
+    
+            <a class="apresentação__links__navegação" href="https://www.linkedin.com">
+                <img src="img/linkedin.png" > Linkedin
+            </a>
+
+            <a class="apresentação__links__navegação" href="https://github.com/RBFdeveloper">
+                <img src="img/github.png"> Github
+            </a>
+
+        <a class="apresentação__links__navegação" href="https://discord.com/">
+            <img src="img/discord.png.png"> Discord
+        </a>
     </div>
 </section>
-    <img src="minhafoto.png" alt="Desenvolvedor">
+
+    <img class="apresentação__imagem" src="./img/minhafoto.png" alt="Desenvolvedor"> <!--src= search ou procurar, alt é usado para texto alternativo-->
     
-</main>
-    <footer></footer>
+</main> 
+<footer class="rodapé">
+    <p>&copy; Desenvolvido Por Ramon Ferreira &middot; 2025 &middot; </p>
+
+
+ </footer> <!--roda pé-->
 </body>
 </html>
